@@ -1,75 +1,59 @@
-# Nuxt Minimal Starter
+```markdown
+# Стандарт Экспресс — Сайт грузоперевозок
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Веб-сайт компании «Стандарт Экспресс», предоставляющей услуги грузчиков, такелажа и переездов в Москве. Проект разработан на **Vue 3** с использованием **Nuxt 3**, TypeScript и SCSS.
 
-## Setup
+## 🚀 Быстрый старт
 
-Make sure to install dependencies:
+Для запуска проекта локально выполните следующие шаги:
 
+### 1. Клонирование репозитория
 ```bash
-# npm
+git clone <URL_ВАШЕГО_РЕПОЗИТОРИЯ>
+cd <ИМЯ_ПАПКИ_ПРОЕКТА>
+```
+
+### 2. Установка зависимостей
+Проект использует Node.js. Убедитесь, что у вас установлена версия **Node.js 18+**.
+```bash
 npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
 ```
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
+### 3. Запуск в режиме разработки
 ```bash
-# npm
 npm run dev
+```
+После запуска откройте браузер по адресу: [http://localhost:3000](http://localhost:3000)
 
-# pnpm
-pnpm dev
+---
 
-# yarn
-yarn dev
+## 🛠 Стек технологий
 
-# bun
-bun run dev
+-   **Фреймворк:** Vue 3 (Composition API, `<script setup>`)
+-   **Мета-фреймворк:** Nuxt 3
+-   **Язык:** TypeScript
+-   **Стили:** SCSS (Scoped), CSS Modules
+-   **Сборщик:** Vite
+-   **Шрифты:** Euclid Circular A (локальные файлы в `/assets/fonts`)
+
+---
+
+## ⚙️ Структура проекта
+
+```text
+├── app/                # Основная директория приложения (Nuxt 3 App Dir)
+│   ├── components/     # Переиспользуемые Vue-компоненты
+│   ├── public/         # Статические файлы (изображения, шрифты, видео)
+│   └── assets/         # Ассеты, обрабатываемые сборщиком (SCSS, шрифты)
+├── node_modules/       # Зависимости (не загружаются в Git)
+├── nuxt.config.ts      # Конфигурация Nuxt
+├── package.json        # Список зависимостей и скриптов
+└── tsconfig.json       # Настройки TypeScript
 ```
 
-## Production
+---
 
-Build the application for production:
+## ❗ Важные примечания
 
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+1.  **Папка `node_modules`**: Не входит в репозиторий. Обязательно выполните `npm install` после клонирования.
+2.  **Версия Node.js**: Рекомендуется использовать Node.js LTS (v18 или v20). Для управления версиями можно использовать `nvm`.
