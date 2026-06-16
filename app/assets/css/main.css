@@ -1,0 +1,16 @@
+/* Глобальный сброс отступов */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+    /* Убирает горизонтальную прокрутку */
+}
+
+/* Правильный box-sizing для всех элементов */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
